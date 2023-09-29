@@ -39,9 +39,53 @@
 // }
 // console.log("array2 " + array2)
 
-let nums = [2, 7, 11, 15], target = 9
-var twoSum = function (nums, target) {
-    return nums + target
-};
+// let nums = [2, 7, 11, 15], target = 9
+// var twoSum = function (nums, target) {
+//     return nums + target
+// };
 
-twoSum()
+// twoSum()
+
+
+// 4.2 Find the “Kth” max and min element of an array
+
+// let arr = [1, 2, 9, 8, 5,]
+// arr.sort((a, b) => {
+//     return a - b
+// })
+// console.log(arr[0])
+// arr.reverse()
+// console.log(arr[0])
+
+// 4.3 Move all the negative elements to one side of the array
+
+// let arr = [-1, 2, 3, -4, 5, -9]
+// arr.sort((a, b) => {
+//     return a - b;
+// })
+// console.log(arr)
+
+
+// Calculate the sum of elements in an array:
+
+// let arr = [1, 2, 3, 5, 6]
+// var sum = 0
+// for (i = 0; i <= arr.length - 1; i++) {
+//     sum += arr[i]
+// }
+// console.log(sum)
+
+// Sort first half in ascending order and second half in descending : 
+
+let arr = [5, 4, 9, 7, 3, 1, 2, 7]
+
+let n = arr.sort()
+for (i = 0; i <= parseInt(n / 2); i++) {
+    console.log(arr[i] + " ")
+}
+
+for (j = 0; j <= parseInt(n / 2); j--) {
+    console.log(arr[j] + " ")
+}
+
+
