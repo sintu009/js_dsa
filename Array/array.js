@@ -75,17 +75,34 @@
 // }
 // console.log(sum)
 
-// Sort first half in ascending order and second half in descending : 
+// Sort first half in ascending order and second half in descending :
+
+// let arr = [5, 4, 9, 7, 3, 1, 2, 7]
+
+// let n = arr.sort()
+// for (i = 0; i <= parseInt(n / 2); i++) {
+//     console.log(arr[i] + " ")
+// }
+
+// for (j = 0; j <= parseInt(n / 2); j--) {
+//     console.log(arr[j] + " ")
+// }
+
+//  Finding the frequency of elements in an array:
+
+// const letters = [1, 1, 2, 3, 4, 4, 5];
+// const count = {}; letters.forEach(e => count[e] ? count[e]++ : count[e] = 1);
+
+// console.log(count)
+
+
+
+// -------------------------------------------------
+
+
+
+// Find Largest element in an array
+
 
 let arr = [5, 4, 9, 7, 3, 1, 2, 7]
-
-let n = arr.sort()
-for (i = 0; i <= parseInt(n / 2); i++) {
-    console.log(arr[i] + " ")
-}
-
-for (j = 0; j <= parseInt(n / 2); j--) {
-    console.log(arr[j] + " ")
-}
-
 
