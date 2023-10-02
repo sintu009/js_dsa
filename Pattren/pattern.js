@@ -21,16 +21,25 @@
 
 
 
-for (i = 1; i <= 5; i++) {
-    let k = i
-    for (j = 1; j <= 5; j++) {
-        if (j >= 5 && j <= 3 + i) {
-            console.log(k)
-            j < 4 ? k++ : k--
+// for (i = 1; i <= 5; i++) {
+//     let k = i
+//     for (j = 1; j <= 5; j++) {
+//         if (j >= 5 && j <= 3 + i) {
+//             console.log(k)
+//             j < 4 ? k++ : k--
 
-        }
-        else {
-            console.log('\n')
+//         }
+//         else {
+//             console.log('\n')
+
+//         }
+//     }
+// }
+
+
+for (i = 1; 1 <= 5; i++) {
+    for (j = 1; j <= 5; j++) {
+        if () {
 
         }
     }
