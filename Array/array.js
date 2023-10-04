@@ -13,7 +13,7 @@
 // let arr = [1, 2, 3, 4, 9, 5, 7, 6, 0]
 // console.log(Math.max(...arr))
 
-//2nd method
+// 2nd method
 // let arr = [1, 2, 3, 4, 20, 5, 7, 6, 0]
 // arr.sort((a, b) => {
 //     return a - b;
@@ -22,7 +22,7 @@
 // console.log(arr[0])
 
 
-//3. ##Take this array var array = [1, 2, 3, 4, 5] and copy it using
+// 3. ##Take this array var array = [1, 2, 3, 4, 5] and copy it using
 
 // 1st method
 // var array = [1, 2, 3, 4, 5]
@@ -106,5 +106,5 @@
 // Find Largest element in an array
 
 
-let arr = [5, 4, 9, 7, 3, 1, 2, 7]
+// let arr = [5, 4, 9, 7, 3, 1, 2, 7]
 

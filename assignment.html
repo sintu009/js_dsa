@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+    <h1>Array Methods assignment</h1>
+    <script>
+        const student = [{ Name: 'A', ID: 5, age: '23', Gender: 'Male' },
+        { Name: 'B', ID: 3, age: 18, Gender: 'Male' },
+        { Name: 'C', ID: 2, age: 16, Gender: 'Male' },
+        { Name: 'D', ID: 6, age: 15, Gender: 'Female' },
+        { Name: 'E', ID: 4, age: 28, Gender: 'Female' },
+        { Name: 'F', ID: 1, age: 32, Gender: 'Male' },
+        { Name: 'G', ID: 8, age: 12, Gender: 'Female' },
+        { Name: 'H', ID: 7, age: 30, Gender: 'Male' }]
+
+        //ARRAY WITH NAME OF EVERY MALE AND FEMALE STUDENT
+        const arr_male = []
+        const arr_female = []
+
+        student.forEach((value) => {
+            if (value.Gender == 'Male')
+                arr_male.push(value.Name)
+            if (value.Gender == 'Female')
+                arr_female.push(value.Name)
+        })
+        console.log(arr_male);
+        console.log(arr_female);
+
+        //-------------------------------------------------
+        //STUDENTS AGED 18+
+        let underage = student.filter(value => value.age > 18)
+        console.log(`ALL STUDENTS ABOVE 18 YEARS`);
+        console.log(underage);
+
+        //---------------------------------------------------
+
+        //MALE STUDENTS ABOVE THE AGE OF 18
+
+        let male_18 = student.filter((value) => {
+            if (value.age > 18 && value.Gender == 'Male')
+                return value
+        })
+        console.log(`\nMALE WITH AGE 18+`);
+        console.log(male_18);
+        //----------------------------------------------------------
+
+        //UPDATE AGE
+        let updated_age = student.map((value) => {
+            if (value.ID == 5)
+                value.age = 29
+            return value
+        })
+        console.log(`\nUpdated AGE`);
+        console.log(updated_age)
+
+        //--------------------------------
+        //SORT ACCORDING TO STUDENT AGE
+
+        console.log(...student.sort((a, b) => { return a.ID - b.ID }))
+
+        //FINDING 2ND LARGEST ELEMENT IN ARRAY
+
+        // let arr = [22, 59, 23, 12, 56, 44, 90, 81, 58, 45]
+        // let num = -Infinity
+        // for (let i of arr) {
+        //     if (i > num)
+        //         num = i
+        // }
+        // let secondLargest = -Infinity
+        // for (let i of arr) {
+        //     if (i == num)
+        //         continue
+        //     else if (i > secondLargest)
+        //         secondLargest = i
+        // }
+        // console.log(secondLargest)
+
+        let arr = [22, 59, 23, 12, 56, 44, 90, 81, 58, 45]
+        arr.sort((a,b)=> a-b)
+        console.log(arr[arr.length-2]);
+    </script>
+</body>
+
+</html>
