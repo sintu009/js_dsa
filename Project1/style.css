@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,200;1,300&family=Poppins:wght@200;500&display=swap');
+
+body {
+    /* background-color: aqua; */
+    font-family: Montserrat;
+    height: 722px;
+    background-image: linear-gradient(to right top, #845ec2, #845ec2, #0081cf, #0081cf, #0089ba, #0089ba, #008e9b, #008e9b, #008f7a, #008f7a);
+    background-repeat: no-repeat;
+
+}
+
+
+
+.container {
+    width: 360px;
+    padding: 33px;
+    text-align: center;
+    background-color: azure;
+    margin-left: 33%;
+    margin-top: 5px;
+    border-radius: 15px;
+
+
+}
+
+
+
+input {
+    width: 270px;
+    padding: 8px;
+    border: 2px solid rgb(6, 145, 145);
+    outline: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 60px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    /* font-family: sans-serif; */
+
+
+}
+
+button:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+.text ul {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    color: wheat;
+    font-size: 20px;
+    text-align: left;
+    border-radius: 5px;
+    height: 30px;
+    padding: 7px;
+}
+
+.text ul i {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+
+
+}
+
+.img-left,
+img {
+    height: 450px;
+    position: absolute;
+    top: 144px;
+
+}
+
+.img-right,
+img2 {
+    height: 450px;
+    position: absolute;
+    top: 144px;
+    left: 1000px;
+
+}
+
+tr:nth-child(odd) {
+    background-color: #ee0000;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Apply border to table cells */
+td {
+    border: 1px solid black;
+    padding: 8px;
+}

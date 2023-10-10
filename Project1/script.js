@@ -10,14 +10,13 @@ function Add() {
     else {
         let newEle = document.createElement("ul")
         newEle.innerHTML = `${inputs.value} <i class="fa fa-trash" aria-hidden="true"></i>`;
-        text.appendChild(newEle)
+        text.appendChil(newEle)
         inputs.value = "";
-        newEle.querySelector("i").addEventListener("click", remove)
 
+        newEle.querySelector("i").addEventListener("click", remove)
         function remove() {
             newEle.remove()
         }
     }
-
 }
 
