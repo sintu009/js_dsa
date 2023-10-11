@@ -100,3 +100,34 @@ td {
     border: 1px solid black;
     padding: 8px;
 }
+
+
+.tasks-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tasks-table th,
+.tasks-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.tasks-table th {
+    background-color: #f2f2f2;
+}
+
+.tasks-table button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tasks-table button:hover {
+    background-color: #ff3333;
+}
